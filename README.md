@@ -1,1 +1,1 @@
-"# CodeCamp16-AndroidSample" 
+# CodeCamp16-AndroidSample
