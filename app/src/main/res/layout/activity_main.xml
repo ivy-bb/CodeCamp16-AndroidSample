@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal">
+        <EditText android:id="@+id/edit_message"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:hint="@string/edit_message" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_send"
+            android:onClick="sendMessage"
+             />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:gravity="fill_horizontal|center">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select from Phone Book"
+            android:contentDescription="Select from Phone Book"
+            android:onClick="getPhoneNumber"
+            android:layout_gravity="start"
+            android:src="@mipmap/ivy_launcher"
+            android:background="@drawable/abc_btn_borderless_material" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select from Phone Book"
+            android:onClick="getPhoneNumber"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/abc_btn_borderless_material" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:gravity="fill_horizontal|center">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Picture"
+            android:contentDescription="Take Picture"
+            android:onClick="takePicture"
+            android:layout_gravity="start"
+            android:src="@mipmap/ivy_launcher"
+            android:background="@drawable/abc_btn_borderless_material" />
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Picture"
+        android:onClick="takePicture"
+            android:background="@drawable/abc_btn_borderless_material"
+            android:gravity="top" />
+
+        <ImageView android:id="@+id/pic_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:gravity="fill_horizontal|center">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find ivyTeam"
+        android:contentDescription="Find ivyTeam"
+        android:onClick="findIvyteam"
+        android:layout_gravity="start"
+        android:src="@mipmap/ivy_launcher"
+        android:background="@drawable/abc_btn_borderless_material" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find ivyTeam"
+            android:contentDescription="Find ivyTeam"
+            android:onClick="findIvyteam"
+            android:background="@drawable/abc_btn_borderless_material" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:gravity="fill_horizontal|center">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read Feed Service"
+            android:contentDescription="Read Feed Service"
+            android:onClick="gotoweb"
+            android:layout_gravity="start"
+            android:src="@mipmap/ivy_launcher"
+            android:background="@drawable/abc_btn_borderless_material" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Feed Service"
+        android:onClick="gotoweb"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/abc_btn_borderless_material" />
+</LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:gravity="fill_horizontal|center">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call ivy REST Service"
+            android:contentDescription="Call ivy REST Service"
+            android:onClick="callRest"
+            android:layout_gravity="start"
+            android:src="@mipmap/ivy_launcher"
+            android:background="@drawable/abc_btn_borderless_material" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call ivy REST Service"
+        android:onClick="callRest"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/abc_btn_borderless_material" />
+</LinearLayout>
+</LinearLayout>
